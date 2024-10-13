@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Clone</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <button id="toggle-sidebar">Toggle Sidebar</button>
+            <ul>
+                <li>Chat 1</li>
+                <li>Chat 2</li>
+                <li>Chat 3</li>
+            </ul>
+        </div>
+
+        <div class="chat-container">
+            <div class="messages" id="messages"></div>
+
+            <div class="input-area">
+                <input type="text" id="input-message" placeholder="Type a message...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

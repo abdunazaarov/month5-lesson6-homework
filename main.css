@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ededed;
+}
+
+.container {
+    display: flex;
+    width: 400px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.sidebar {
+    width: 120px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    border-right: 2px solid #ccc;
+}
+
+#toggle-sidebar {
+    margin-bottom: 10px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.chat-container {
+    height: 450px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.messages {
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/21/Blackboard_background_%283479040367%29.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.message {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.message.user {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.message.bot {
+    align-self: flex-start;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.time {
+    font-size: 10px;
+    color: gray;
+    text-align: right;
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+}
+
+#input-message {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#send-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
